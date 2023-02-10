@@ -20,7 +20,7 @@ jobs:
           port:  ${{ secrets.PORT }}
           script: |
                cd /var/www/New_Project_Practise
-               touch file2
+               sudo touch file2
                #sudo git clone -b Dev https://reddiprasad72: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@github.com/reddiprasad72/New_Project_Practise.git
                sudo apt-get update
                
