@@ -25,6 +25,9 @@ jobs:
                #sudo apt-get update
                sudo git pull
                sudo touch files
+               sudo git add .
+               sudo git commit -m "add new files"
+               sudo git push
                #sudo apt-get install apache2 -y
               # sudo add-apt-repository ppa:ondrej/php
               # sudo apt-get update
