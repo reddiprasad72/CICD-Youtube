@@ -19,9 +19,8 @@ jobs:
           key:  ${{ secrets.KEY }}
           port:  ${{ secrets.PORT }}
           script: |
-               cd /var/www/New_Project_Practise
-               sudo touch file2
-               
+               sudo rm -rf  /var/www/New_Project_Practise
+               sudo cd /var/www/
                sudo git clone -b main https://reddiprasad72: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@github.com/reddiprasad72/CICD-Youtube
                #sudo apt-get update
                sudo git pull
