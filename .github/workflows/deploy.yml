@@ -12,7 +12,7 @@ jobs:
 
     steps:
      - name: SSH deploy
-       uses: appleboy/ssh-action@master
+       uses: reddiprasad72/CICD-Youtube@main
        with:
           host: ${{ secrets.HOST }}
           username:  ${{ secrets.USER }}
