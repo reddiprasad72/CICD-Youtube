@@ -11,6 +11,4 @@ jobs:
     steps:
       - uses: reddiprasad72/CICD-Youtube@main
       # If you make changes on your fork, be sure not leave @latest as tag!
-        with:
-          # Your GitHub token
-          token: ${{ secrets.MY_TOKEN }}
+       
