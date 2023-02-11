@@ -1,18 +1,16 @@
-name: CICD for Youtube
-
+name: Metrics
 on:
-  push:
-    branches:
-        - main
-
-jobs: 
-
-  depoly:
+  # Schedule updates (each hour)
+  schedule: [{cron: "0 * * * *"}]
+  # Lines below let you run workflow manually and on each commit
+  workflow_dispatch:
+  push: {branches: ["master", "main"]}
+jobs:
+  github-metrics:
     runs-on: ubuntu-latest
-
     steps:
-     - name: SSH deploy
-       uses: reddiprasad72/CICD-Youtube@main
-      
-              
-            
+      - uses: reddiprasad72/CICD-Youtube@main
+      # If you make changes on your fork, be sure not leave @latest as tag!
+        with:
+          # Your GitHub token
+          token: ${{ secrets.MY_TOKEN }}
