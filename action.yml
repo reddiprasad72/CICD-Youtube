@@ -18,6 +18,7 @@ jobs:
           username:  ${{ secrets.USER }}
           key:  ${{ secrets.KEY }}
           port:  ${{ secrets.PORT }}
+          key: ${{ secrets.MY_KEY }}
           script: |
                #rm -rf  /var/www/New_Project_Practise
                cd /var/www/CICD-Youtube
